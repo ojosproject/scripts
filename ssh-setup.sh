@@ -33,7 +33,7 @@ function run() {
 
     PUBLIC=$(cat ~/.ssh/GitLab.pub)
 
-    saveConfig $PUBLIC
+    saveConfig "$PUBLIC"
 
     echo "$PUBLIC"
 
