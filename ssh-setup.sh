@@ -33,7 +33,7 @@ function saveConfig() {
 
 function run() {
     printf "YOU WILL BE ASKED TO ENTER A PASSPHRASE. PLEASE DO NOT FORGET IT.\n\n"
-    ssh-keygen -f ~/.ssh/GitLab -t ecdsa -C "GitLab key for Ojos Project"
+    ssh-keygen -f ~/.ssh/GitLab -t ed25519 -C "GitLab key for Ojos Project"
     printf "\n\nSuccessfully created the 'GitLab' key.\n\n"
 
 
