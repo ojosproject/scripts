@@ -3,18 +3,24 @@
 # ssh-setup.sh
 # Ojos Project
 # 
-# This is a script that is meant to help setup git on Unix-based systems. That
+# This is a script that is meant to help setup ssh on Unix-like systems. That
 # is, macOS or Linux. If you are a Windows user, please install the Windows
 # Subsystem for Linux here:
 # https://learn.microsoft.com/en-us/windows/wsl/install
+# 
+# Please read this document as you're using this script:
+# https://gitlab.com/ojosproject/docs/-/blob/main/teams/url/ssh-setup.md
 
 printf "READ THE FOLLOWING INFORMATION CAREFULLY.
 
 This script was designed for software developers working on the Ojos Project
-at the University of California, Irvine. The goal of this script is to:
+at the University of California, Irvine. The goal of this script is to set up
+SSH on your system.
 
-1) Set up SSH on your system
-2) Set up git on your system
+Please make sure you are running this on a Unix-based system.
+
+Read this document as you try to install:
+https://gitlab.com/ojosproject/docs/-/blob/main/teams/url/ssh-setup.md
 
 "
 
