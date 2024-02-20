@@ -23,6 +23,7 @@ As of now, the packages it installs are:
 - nodejs
 - npm
 - gpg
+- sass (via npm)
 
 It also installs a `.zshrc` file, which includes some useful configurations,
 such as:
