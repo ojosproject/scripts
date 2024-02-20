@@ -7,7 +7,9 @@
 # University of California, Irvine. It installs programs that we will be using
 # for the project. This script should be updated constantly.
 
-printf "READ THE FOLLOWING INFORMATION CAREFULLY.
+printf "
+-------------------------------------------------------------------------------
+READ THE FOLLOWING INFORMATION CAREFULLY.
 
 This script was designed for individuals working on the Ojos Project at the
 University of California, Irvine working on the Ojos Project. The goal of this
@@ -22,16 +24,20 @@ Please make sure you are running a Debian-based Linux distribution.
 This script **will** rewrite your .zshrc file if you have one. YOU HAVE BEEN
 WARNED.
 
+-------------------------------------------------------------------------------
 "
 
-CDRIVE_COMMAND_INSTRUCTIONS="'cdrive' COMMAND SETUP
+CDRIVE_COMMAND_INSTRUCTIONS="
+-------------------------------------------------------------------------------
+'cdrive' COMMAND SETUP
             
 When you type 'cdrive' on the terminal, it will take you to your
-Windows home directory. To get that, I will need your Windows
+Windows home directory. To do that, I will need your Windows
 username. Your username can be found here: 
             
 Open Powershell -> 'PS C:\\Users\[THIS IS YOUR USERNAME]>' 
-            
+-------------------------------------------------------------------------------
+
 "
 
 function checkOrInstall() {
