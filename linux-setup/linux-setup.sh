@@ -94,6 +94,7 @@ function run() {
     checkOrInstall nodejs
     checkOrInstall npm
     checkOrInstall gpg
+    checkOrInstall vim
     checkOrInstall zsh
     npm install -g sass
 
