@@ -48,7 +48,7 @@ function checkOrInstall() {
 
     if ! command -v "$1" &> /dev/null; then
         echo "Installing $1..."
-        # sudo apt install "$1" -y
+        sudo apt install "$1" -y
 
         # if the command is zsh
         # it will setup .zshrc
