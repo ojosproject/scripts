@@ -28,7 +28,7 @@ CDRIVE_COMMAND_INSTRUCTIONS="'cdrive' COMMAND SETUP
             
 When you type 'cdrive' on the terminal, it will take you to your
 Windows home directory. To get that, I will need your Windows
-username. our username can be found here: 
+username. Your username can be found here: 
             
 Open Powershell -> 'PS C:\\Users\[THIS IS YOUR USERNAME]>' 
             
@@ -59,7 +59,7 @@ function checkOrInstall() {
             read -r username
 
             echo "Installing .zshrc..."
-            cp -f .zshrc ~/.zshrc
+            cp -f "$PWD"/.zshrc ~/.zshrc
 
             # creates a new alias, "cdrive", to take users to their Windows
             # home directory
