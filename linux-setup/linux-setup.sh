@@ -89,6 +89,8 @@ function run() {
     checkOrInstall npm
     checkOrInstall gpg
     checkOrInstall zsh
+
+    echo "SUCCESS. Please close this terminal. Thanks!"
 }
 
 echo -n "Continue? [y/N]: "
