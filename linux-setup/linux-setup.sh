@@ -63,7 +63,7 @@ function checkOrInstall() {
 
             # creates a new alias, "cdrive", to take users to their Windows
             # home directory
-            echo "alias cdrive=cd /mnt/c/Users/$username" >> ~/.zshrc
+            echo "alias cdrive=cd \"/mnt/c/Users/$username\"" >> ~/.zshrc
 
             echo "Asking to switch shell..."
             chsh -s "$(which zsh)"
