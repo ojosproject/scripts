@@ -24,6 +24,16 @@ WARNED.
 
 "
 
+CDRIVE_COMMAND_INSTRUCTIONS="'cdrive' COMMAND SETUP
+            
+When you type 'cdrive' on the terminal, it will take you to your
+Windows home directory. To get that, I will need your Windows
+username. our username can be found here: 
+            
+Open Powershell -> 'PS C:\\Users\[THIS IS YOUR USERNAME]>' 
+            
+"
+
 function checkOrInstall() {
     # checks to see if a command is available
     # if a command is not available, it will install it
@@ -43,15 +53,7 @@ function checkOrInstall() {
         # if the command is zsh
         # it will setup .zshrc
         if [[ $1 == "zsh" ]]; then
-            printf "'cdrive' COMMAND SETUP
-            
-            When you type 'cdrive' on the terminal, it will take you to your
-            Windows home directory. To get that, I will need your Windows
-            username. our username can be found here: 
-            
-            Open Powershell -> 'PS C:\Users\[THIS IS YOUR USERNAME]>' 
-            
-            "
+            echo "$CDRIVE_COMMAND_INSTRUCTIONS"
 
             echo -n "What is your Windows username? "
             read -r username
