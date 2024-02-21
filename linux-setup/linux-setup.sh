@@ -66,6 +66,13 @@ function checkOrInstall() {
             echo -n "What is your Windows username? "
             read -r username
 
+            # loop to ensure directory exists
+            while [[ ! -e "/mnt/c/Users/${username}/" ]]; do
+                echo -n "Sorry, that path doesn't seem to exist. Please try again."
+                echo -n "What is your Windows username? "
+                read -r username
+            done
+
             echo "Installing .zshrc..."
             cp -f "$PWD"/.zshrc ~/.zshrc
 
