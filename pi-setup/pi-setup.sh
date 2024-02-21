@@ -1,13 +1,13 @@
 #!/bin/bash
 #
-# setup.sh
+# pi-setup.sh
 # Ojos Project
 # 
 # This is a setup script for the Raspberry Pi that will be used for the Ojos
 # Project.
 # 
 # To run this script, please run this command in the terminal:
-# bash setup.sh
+# bash pi-setup.sh
 printf "READ THE FOLLOWING IMPORTANT INFORMATION CAREFULLY.
 
 This script was designed for Raspberry Pis that are used for the Ojos Project
