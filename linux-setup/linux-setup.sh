@@ -94,7 +94,6 @@ function run() {
     checkOrInstall gpg
     checkOrInstall vim
     checkOrInstall zsh
-    npm install -g sass
 
     echo "SUCCESS. Please close this terminal. Thanks!"
 }
