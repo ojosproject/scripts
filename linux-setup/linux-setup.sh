@@ -61,24 +61,27 @@ function checkOrInstall() {
         # if the command is zsh
         # it will setup .zshrc
         if [[ $1 == "zsh" ]]; then
-            echo "$CDRIVE_COMMAND_INSTRUCTIONS"
-
-            echo -n "What is your Windows username? "
-            read -r username
-
-            # loop to ensure directory exists
-            while [[ ! -e "/mnt/c/Users/${username}/" ]]; do
-                echo -n "Sorry, that path doesn't seem to exist. Please try again."
-                echo -n "What is your Windows username? "
-                read -r username
-            done
-
             echo "Installing .zshrc..."
             cp -f "$PWD"/.zshrc ~/.zshrc
 
-            # creates a new alias, "cdrive", to take users to their Windows
-            # home directory
-            echo "alias cdrive=\"cd /mnt/c/Users/$username\"" >> ~/.zshrc
+                if [ "$(uname -r | grep -c 'microsoft')" -gt 0 ] ; then
+                    echo "WINDOWS SUBSYSTEM FOR LINUX DETECTED..."
+                    echo "$CDRIVE_COMMAND_INSTRUCTIONS"
+
+                    echo -n "What is your Windows username? "
+                    read -r username
+
+                    # loop to ensure directory exists
+                    while [[ ! -e "/mnt/c/Users/${username}/" ]]; do
+                        echo -n "Sorry, that path doesn't seem to exist. Please try again."
+                        echo -n "What is your Windows username? "
+                        read -r username
+                    done
+
+                    # creates a new alias, "cdrive", to take users to their Windows
+                    # home directory
+                    echo "alias cdrive=\"cd /mnt/c/Users/$username\"" >> ~/.zshrc
+                fi
 
             echo "Asking to switch shell..."
             chsh -s "$(which zsh)"
