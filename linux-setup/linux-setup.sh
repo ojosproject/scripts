@@ -40,6 +40,9 @@ Open Powershell -> 'PS C:\\Users\[THIS IS YOUR USERNAME]>'
 
 "
 
+# these are the programs that will be installed using apt
+APT_PACKAGES=("nodejs" "npm" "gpg" "vim" "zsh")
+
 function checkOrInstall() {
     # checks to see if a command is available
     # if a command is not available, it will install it
@@ -88,12 +91,9 @@ function run() {
     sudo apt upgrade
 
     echo "Installing packages..."
-    checkOrInstall git
-    checkOrInstall nodejs
-    checkOrInstall npm
-    checkOrInstall gpg
-    checkOrInstall vim
-    checkOrInstall zsh
+    for package in "${APT_PACKAGES[@]}"; do
+        checkOrInstall "$package"
+    done
 
     echo "SUCCESS. Please close this terminal. Thanks!"
 }
