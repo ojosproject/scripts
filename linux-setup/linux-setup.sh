@@ -44,8 +44,6 @@ function checkOrInstall() {
     # checks to see if a command is available
     # if a command is not available, it will install it
     # it takes 1 argument: $1, which is the command we are looking for
-    # if the command is `zsh`, it takes a second param, $2, which is their
-    # Windows username
 
     if [[ "$1" == "nodejs" ]]; then
         # node in apt is 'nodejs', but command is 'node'
