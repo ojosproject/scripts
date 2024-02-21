@@ -21,8 +21,9 @@ script is to:
 
 Please make sure you are running a Debian-based Linux distribution.
 
-This script **will** rewrite your .zshrc file if you have one. YOU HAVE BEEN
-WARNED.
+This script **will** rewrite your .zshrc file if you have one.
+
+YOU HAVE BEEN WARNED.
 
 -------------------------------------------------------------------------------
 "
