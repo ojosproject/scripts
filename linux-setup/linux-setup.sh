@@ -67,7 +67,7 @@ function checkOrInstall() {
             read -r username
 
             echo "Installing .zshrc..."
-            cp -f "$PWD"/linux-setup/.zshrc ~/.zshrc
+            cp -f "$PWD"/.zshrc ~/.zshrc
 
             # creates a new alias, "cdrive", to take users to their Windows
             # home directory
