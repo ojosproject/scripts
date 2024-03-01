@@ -25,4 +25,4 @@ such as:
 
 - Git repo/branch indicator
 - Custom commands, which
-[can be found here](https://gitlab.com/ojosproject/docs/-/tree/main/teams/url#custom-bash-commands)
+[can be found here](https://docs.ojosproject.org/teams/url/#custom-bash-commands)
