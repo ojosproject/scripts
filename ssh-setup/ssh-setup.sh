@@ -9,7 +9,7 @@
 # https://learn.microsoft.com/en-us/windows/wsl/install
 # 
 # Please read this document as you're using this script:
-# https://gitlab.com/ojosproject/docs/-/blob/main/teams/url/ssh-setup.md
+# https://docs.ojosproject.org/teams/url/ssh-setup/
 
 printf "READ THE FOLLOWING INFORMATION CAREFULLY.
 
@@ -20,7 +20,7 @@ SSH on your system.
 Please make sure you are running this on a Unix-based system.
 
 Read this document as you try to install:
-https://gitlab.com/ojosproject/docs/-/blob/main/teams/url/ssh-setup.md
+https://docs.ojosproject.org/teams/url/ssh-setup/
 
 "
 

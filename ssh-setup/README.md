@@ -9,4 +9,4 @@ bash ssh-setup.sh
 ```
 
 For more in-depth instructions, please go to
-[this page](https://gitlab.com/ojosproject/docs/-/blob/main/teams/url/ssh-setup.md).
+[this page](https://docs.ojosproject.org/teams/url/ssh-setup/).
