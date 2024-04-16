@@ -16,7 +16,7 @@ function activate() {
         eval "$(ssh-agent -s)"
     fi
 
-    ssh-add ~/.ssh/GitLab
+    ssh-add ~/.ssh/github
 }
 
 alias check="ssh-add -l"
