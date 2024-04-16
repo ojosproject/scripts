@@ -25,29 +25,29 @@ https://docs.ojosproject.org/teams/url/ssh-setup/
 "
 
 function saveConfig() {
-    printf "Host git@gitlab.com\n" >> ~/.ssh/config
-    printf "\tIdentityFile ~/.ssh/GitLab\n" >> ~/.ssh/config
+    printf "Host git@github.com\n" >> ~/.ssh/config
+    printf "\tIdentityFile ~/.ssh/github\n" >> ~/.ssh/config
 
     echo "Successfully updated your config file."
 }
 
 function run() {
     printf "YOU WILL BE ASKED TO ENTER A PASSPHRASE. PLEASE DO NOT FORGET IT.\n\n"
-    ssh-keygen -f ~/.ssh/GitLab -t ed25519 -C "GitLab key for Ojos Project"
-    printf "\n\nSuccessfully created the 'GitLab' key.\n\n"
+    ssh-keygen -f ~/.ssh/github -t ed25519 -C "GitHub key for Ojos Project"
+    printf "\n\nSuccessfully created the 'github' key.\n\n"
 
 
-    PUBLIC=$(cat ~/.ssh/GitLab.pub)
+    PUBLIC=$(cat ~/.ssh/github.pub)
 
     saveConfig "$PUBLIC"
 
     echo "$PUBLIC"
 
     printf "
-    Please copy ^^^this^^^ key to your GitLab account.
+Please copy ^^^this^^^ key to your GitHub account.
     
-    Learn more here:
-    https://docs.gitlab.com/ee/user/ssh.html#add-an-ssh-key-to-your-gitlab-account\n"
+Learn more here:
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account\n"
 }
 
 echo -n "Continue? [y/N]: "
