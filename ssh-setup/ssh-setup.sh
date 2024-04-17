@@ -25,7 +25,7 @@ https://docs.ojosproject.org/teams/url/ssh-setup/
 "
 
 function saveConfig() {
-    printf "Host git@github.com\n" >> ~/.ssh/config
+    printf "Host github.com\n" >> ~/.ssh/config
     printf "\tIdentityFile ~/.ssh/github\n" >> ~/.ssh/config
 
     echo "Successfully updated your config file."
